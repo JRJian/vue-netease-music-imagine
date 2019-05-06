@@ -3,14 +3,16 @@ import Vuex from 'vuex'
 
 Vue.use(Vuex)
 
-export default new Vuex.Store({
+const staticText = {
+  namespaced: true,
   state: {
+    tabs: ['推荐', '排行', '歌手'],
+    sections: ['推荐歌单', '推荐歌曲']
+  }
+}
 
-  },
-  mutations: {
-
-  },
-  actions: {
-
+export default new Vuex.Store({
+  modules: {
+    staticText,
   }
 })

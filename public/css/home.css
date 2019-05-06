@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'webfont';
+    src: url('//at.alicdn.com/t/webfont_27anv2r92oz.eot');
+    /* IE9*/
+    src: url('//at.alicdn.com/t/webfont_27anv2r92oz.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('//at.alicdn.com/t/webfont_27anv2r92oz.woff') format('woff'), /* chrome、firefox */
+    url('//at.alicdn.com/t/webfont_27anv2r92oz.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('//at.alicdn.com/t/webfont_27anv2r92oz.svg#思源黑体-极细') format('svg');
+    /* iOS 4.1- */
+}
+
+html, body {
+    font-family: 'webfont' !important;
+}
+
+/* header */
+.m-header {
+    background-color: #d44439;
+    height: 44px;
+    width: 100%;
+    display: relative;
+}
+
+.m-header h1 {
+    color: white;
+    text-align: center;
+    line-height: 44px;
+    vertical-align: middle;
+}
+
+.m-header .mine {
+    position: absolute;
+    top: -1.5px;
+    left: 0;
+}
+
+.m-header .search {
+    position: absolute;
+    top: -1.5px;
+    right: 0;
+}
+
+/* tabs */
+.tab {
+    display: flex;
+    background-color: #d44439;
+    line-height: 44px;
+    width: 100%;
+}
+.tab .tab-item {
+    flex: 1;
+    text-align: center;
+}
+.tab .tab-item span {
+    padding-bottom: 3px;
+    color: #f1f1f1;
+    font-size: 0.85em;
+}
+.tab .tab-item span.active {
+    border-bottom: 2px solid #f1f1f1;
+}
